@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react'
 import faker from 'faker';
 
-const App = () => {
+
+// comment detail componet
+const CommentDetails = () => {
     return (
-        <div className="ui container comments">
-            <div className="comment">
+        <div className="comment">
                 <a href="/" className="avatar">
                     <img alt="avatar" src={faker.image.avatar()}/>
                 </a>
@@ -16,13 +16,9 @@ const App = () => {
                 <div className="metadata">
                     <span className="date">Today at 6:00PM</span>
                 </div>
-                    <div className="text">Nice blog post!</div>
-                </div>
+                <div className="text">Nice blog post!</div>
             </div>
-        
-            
         </div>
+      
     );
-};
-
-ReactDOM.render(<App />, document.querySelector('#root'))
+}
