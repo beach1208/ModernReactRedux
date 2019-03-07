@@ -9,25 +9,32 @@ import CommentDetail from './CommentDetail';
 const App = () => {
     return (
         <div className="ui container comments">
-            <ApprovalCard />
+            <ApprovalCard>
             <CommentDetail 
                 author="Sam" 
                 imeAgo="Today at 4:45pm" 
                 comment="Nice Blog Post!"
                 avatar={faker.image.avatar()}
             />
+            </ApprovalCard>
+
+            <ApprovalCard>
             <CommentDetail 
                 author="Alex" 
                 timeAgo="Today at 2pm" 
                 comment="Interesting"
                 avatar={faker.image.avatar()}
             />
+            </ApprovalCard>
+
+            <ApprovalCard>
             <CommentDetail 
                 author="Jane" 
                 timeAgo="Yesterday at 6pm" 
                 comment="I enjoyed reading it"
                 avatar={faker.image.avatar()}
             />
+            </ApprovalCard>
         </div>
     );
 };
