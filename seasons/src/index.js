@@ -13,6 +13,7 @@ class App extends React.Component {
         //set default value of latitude. if you dont know default, set null
         this.state = {lat: null, errorMessage: ''};
 
+        //Data loading inside constructor is not recommended from official document
         //get user location function
         //if its in render() method, it will be called over and over when its redered.
         window.navigator.geolocation.getCurrentPosition(
