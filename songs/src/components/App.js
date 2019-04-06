@@ -1,5 +1,6 @@
 import React from 'react';
 import SongList from './SongList';
+import SongDetail from './SongDetail';
 
 //dafault export no need curybraces
 //{selectSong} named function export
@@ -13,6 +14,9 @@ const App = () => {
                 <div className="column eight wide">
                     <SongList/>
                 </div>
+                <div className="column eight wide">
+                    <SongDetail/>
+                 </div>
             </div>
         </div>
     );
